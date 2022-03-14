@@ -12,5 +12,5 @@ struct HeroStats: Decodable {
     let description: String
     let symptoms: String
     let types: String
-   
+    let id: Int
 }
