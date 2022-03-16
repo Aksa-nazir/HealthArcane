@@ -50,7 +50,7 @@ class AViewController: UIViewController, UITableViewDataSource, UITableViewDeleg
     }
     
     func downloadJson(completed: @escaping () -> ()){
-        let url = URL(string: "https://firebasestorage.googleapis.com/v0/b/health-arcane.appspot.com/o/MentalHealth.json?alt=media&token=eea5a744-ae19-466d-a9f4-524c7723c3de")
+        let url = URL(string: "https://firebasestorage.googleapis.com/v0/b/health-arcane.appspot.com/o/MentalHealth.json?alt=media&token=2fc83e2f-fa7a-444f-b360-9daa37d197cc")
         
         URLSession.shared.dataTask(with: url!) { data, response, error in
             if error == nil {
