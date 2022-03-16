@@ -19,12 +19,13 @@
 		CE0A509927BD57DC00141693 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CE0A509827BD57DC00141693 /* FirebaseStorage */; };
 		CE13268827C60C4500B37F5B /* ContactUsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13268727C60C4500B37F5B /* ContactUsTableViewController.swift */; };
 		CE13268A27C611D600B37F5B /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13268927C611D600B37F5B /* ProfileTableViewController.swift */; };
-		CE13269027C61D7E00B37F5B /* MentalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13268F27C61D7E00B37F5B /* MentalCollectionViewCell.swift */; };
-		CE13269227C61DC400B37F5B /* MentalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13269127C61DC400B37F5B /* MentalViewController.swift */; };
-		CE13269627C66F4C00B37F5B /* DetailedMentalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13269527C66F4C00B37F5B /* DetailedMentalTableViewController.swift */; };
 		CE178ABC27C4DC360096B494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE178ABB27C4DC360096B494 /* Main.storyboard */; };
 		CE1F02FD27C412F200565F96 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F02FC27C412F200565F96 /* SettingTableViewController.swift */; };
 		CE1F02FF27C4169A00565F96 /* hometabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F02FE27C4169A00565F96 /* hometabViewController.swift */; };
+		CE3358AB27E1E91200C8E62A /* PhysicalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3358AA27E1E91200C8E62A /* PhysicalTableViewController.swift */; };
+		CE3358AD27E1ED4E00C8E62A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3358AC27E1ED4E00C8E62A /* CollectionViewCell.swift */; };
+		CE3358AF27E1F69A00C8E62A /* PDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3358AE27E1F69A00C8E62A /* PDetailTableViewController.swift */; };
+		CE3358B227E225C000C8E62A /* WeighCalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3358B127E225C000C8E62A /* WeighCalculatorTableViewController.swift */; };
 		CE49CEB927C4CF920086A8BB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = CE49CEB827C4CF920086A8BB /* SideMenu */; };
 		CE9F8FE927BA66F400D0669D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F8FE827BA66F400D0669D /* AppDelegate.swift */; };
 		CE9F8FEB27BA66F400D0669D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F8FEA27BA66F400D0669D /* SceneDelegate.swift */; };
@@ -44,12 +45,13 @@
 		CE0A508E27BD3A6500141693 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE13268727C60C4500B37F5B /* ContactUsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsTableViewController.swift; sourceTree = "<group>"; };
 		CE13268927C611D600B37F5B /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
-		CE13268F27C61D7E00B37F5B /* MentalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalCollectionViewCell.swift; sourceTree = "<group>"; };
-		CE13269127C61DC400B37F5B /* MentalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalViewController.swift; sourceTree = "<group>"; };
-		CE13269527C66F4C00B37F5B /* DetailedMentalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedMentalTableViewController.swift; sourceTree = "<group>"; };
 		CE178ABB27C4DC360096B494 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CE1F02FC27C412F200565F96 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		CE1F02FE27C4169A00565F96 /* hometabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hometabViewController.swift; sourceTree = "<group>"; };
+		CE3358AA27E1E91200C8E62A /* PhysicalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalTableViewController.swift; sourceTree = "<group>"; };
+		CE3358AC27E1ED4E00C8E62A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CE3358AE27E1F69A00C8E62A /* PDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDetailTableViewController.swift; sourceTree = "<group>"; };
+		CE3358B127E225C000C8E62A /* WeighCalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeighCalculatorTableViewController.swift; sourceTree = "<group>"; };
 		CE9F8FE527BA66F400D0669D /* HealthArcane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthArcane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F8FE827BA66F400D0669D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9F8FEA27BA66F400D0669D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,14 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE02E2A627DC663D00AFA769 /* New Group */ = {
+		CE02E2A627DC663D00AFA769 /* Physical Health */ = {
 			isa = PBXGroup;
 			children = (
-				CE13268F27C61D7E00B37F5B /* MentalCollectionViewCell.swift */,
-				CE13269527C66F4C00B37F5B /* DetailedMentalTableViewController.swift */,
-				CE13269127C61DC400B37F5B /* MentalViewController.swift */,
+				CE3358AC27E1ED4E00C8E62A /* CollectionViewCell.swift */,
+				CE3358AA27E1E91200C8E62A /* PhysicalTableViewController.swift */,
+				CE3358AE27E1F69A00C8E62A /* PDetailTableViewController.swift */,
+				CE3358B127E225C000C8E62A /* WeighCalculatorTableViewController.swift */,
 			);
-			path = "New Group";
+			path = "Physical Health";
 			sourceTree = "<group>";
 		};
 		CE13268B27C611E800B37F5B /* SideMenuContents */ = {
@@ -147,14 +150,14 @@
 				CE0A508E27BD3A6500141693 /* GoogleService-Info.plist */,
 				CE0A507E27BD30D300141693 /* HomeTableViewController.swift */,
 				CE1F02FC27C412F200565F96 /* SettingTableViewController.swift */,
-				CE02E2A627DC663D00AFA769 /* New Group */,
-				CE13268B27C611E800B37F5B /* SideMenuContents */,
-				CE178ABF27C4F47A0096B494 /* Files */,
 				CE1F02FB27C412C400565F96 /* Authentication */,
+				CE13268B27C611E800B37F5B /* SideMenuContents */,
 				CE13268C27C6188200B37F5B /* MentalHealth */,
+				CE02E2A627DC663D00AFA769 /* Physical Health */,
 				CE9F900027BA673E00D0669D /* LaunchScreen.storyboard */,
 				CE9F8FEA27BA66F400D0669D /* SceneDelegate.swift */,
 				CE9F8FE827BA66F400D0669D /* AppDelegate.swift */,
+				CE178ABF27C4F47A0096B494 /* Files */,
 				CE178ABB27C4DC360096B494 /* Main.storyboard */,
 				CE9F8FF127BA66F500D0669D /* Assets.xcassets */,
 				CE9F8FF627BA66F500D0669D /* Info.plist */,
@@ -245,7 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3358AB27E1E91200C8E62A /* PhysicalTableViewController.swift in Sources */,
+				CE3358AF27E1F69A00C8E62A /* PDetailTableViewController.swift in Sources */,
 				CE1F02FD27C412F200565F96 /* SettingTableViewController.swift in Sources */,
+				CE3358AD27E1ED4E00C8E62A /* CollectionViewCell.swift in Sources */,
+				CE3358B227E225C000C8E62A /* WeighCalculatorTableViewController.swift in Sources */,
 				CE9F900327BA674700D0669D /* LoginScreenTableViewController.swift in Sources */,
 				CE13268827C60C4500B37F5B /* ContactUsTableViewController.swift in Sources */,
 				CE9F900527BA674E00D0669D /* SignUpTableViewController.swift in Sources */,
@@ -253,13 +260,10 @@
 				CE9F8FE927BA66F400D0669D /* AppDelegate.swift in Sources */,
 				CE02E2AE27DCA9B400AFA769 /* TableViewController.swift in Sources */,
 				CE02E2AC27DC6AF600AFA769 /* details.swift in Sources */,
-				CE13269227C61DC400B37F5B /* MentalViewController.swift in Sources */,
 				CE0A507F27BD30D300141693 /* HomeTableViewController.swift in Sources */,
 				CEE99DBF27C3D29E001E4297 /* SplashTableViewController.swift in Sources */,
 				CE9F8FEB27BA66F400D0669D /* SceneDelegate.swift in Sources */,
 				CE1F02FF27C4169A00565F96 /* hometabViewController.swift in Sources */,
-				CE13269027C61D7E00B37F5B /* MentalCollectionViewCell.swift in Sources */,
-				CE13269627C66F4C00B37F5B /* DetailedMentalTableViewController.swift in Sources */,
 				CE13268A27C611D600B37F5B /* ProfileTableViewController.swift in Sources */,
 				CE0A507D27BD309700141693 /* Constants.swift in Sources */,
 			);

@@ -18,18 +18,21 @@ class SettingTableViewController: UITableViewController {
     @IBOutlet weak var ChangePassword: UIButton!
     @IBOutlet weak var Logout: UIButton!
     
+    @IBOutlet weak var tableCell: UITableViewCell!
     
     
     
     
     
     
-    
-    
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+        
+        
+        self.tableCell.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        
         DarkMode.layer.cornerRadius = 10
         LightMode.layer.cornerRadius = 10
         PrivacyPolicy.layer.cornerRadius = 10

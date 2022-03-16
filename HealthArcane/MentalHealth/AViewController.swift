@@ -66,8 +66,5 @@ class AViewController: UIViewController, UITableViewDataSource, UITableViewDeleg
                 }
             }
         }.resume()
-        
     }
-   
-
 }

@@ -10,9 +10,15 @@ import FirebaseAuth
 
 class SplashTableViewController: UITableViewController {
 
+    @IBOutlet weak var tableCell: UITableViewCell!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableCell.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        
+        
     }
     
 
