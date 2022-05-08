@@ -17,6 +17,13 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>Main</string>
+                    
+                    
+                    <key>NSMotionUsageDescription</key>
+                    <string>We are using motion usage in order to track your step count.</string>
+                    
+                    
+                    
 				</dict>
 			</array>
 		</dict>

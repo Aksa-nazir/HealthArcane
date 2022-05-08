@@ -24,13 +24,21 @@ class HomeTableViewController: UITableViewController {
     
     @IBOutlet weak var MedicalHistory: UIButton!
     @IBOutlet weak var slideShow: UIImageView!
-    var imageNames = [ "chashmashahi2","dalLakee1" , "Gulamargg1", "gulmarg3","Khilanmagg3"]
+    var imageNames = [ "a1","a2" , "a3", "a4","overweight", "6", "underweight"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         MentalHealth.layer.cornerRadius = 18
         PhysicalHealth.layer.cornerRadius = 18
         MedicalHistory.layer.cornerRadius = 18
+        MentalHealth.layer.borderWidth = 2
+        MentalHealth.layer.borderColor = UIColor.lightGray.cgColor
+        
+        PhysicalHealth.layer.borderWidth = 2
+        PhysicalHealth.layer.borderColor = UIColor.lightGray.cgColor
+        
+        MedicalHistory.layer.borderWidth = 2
+        MedicalHistory.layer.borderColor = UIColor.lightGray.cgColor
         
         let timer = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true) { timer in
             self.slideShow.image = UIImage(named: self.imageNames.randomElement()!) //Slideshow logic

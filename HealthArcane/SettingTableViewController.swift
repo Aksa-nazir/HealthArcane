@@ -31,13 +31,23 @@ class SettingTableViewController: UITableViewController {
        
         
         
-        self.tableCell.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+//        self.tableCell.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         
         DarkMode.layer.cornerRadius = 10
         LightMode.layer.cornerRadius = 10
         PrivacyPolicy.layer.cornerRadius = 10
         ChangePassword.layer.cornerRadius = 10
         Logout.layer.cornerRadius = 10
+        DarkMode.layer.borderWidth = 2
+        DarkMode.layer.borderColor = UIColor.lightGray.cgColor
+        LightMode.layer.borderWidth = 2
+        LightMode.layer.borderColor = UIColor.lightGray.cgColor
+        PrivacyPolicy.layer.borderWidth = 2
+        PrivacyPolicy.layer.borderColor = UIColor.lightGray.cgColor
+        ChangePassword.layer.borderWidth = 2
+        ChangePassword.layer.borderColor = UIColor.lightGray.cgColor
+        Logout.layer.borderWidth = 2
+        Logout.layer.borderColor = UIColor.lightGray.cgColor
     }
     
     

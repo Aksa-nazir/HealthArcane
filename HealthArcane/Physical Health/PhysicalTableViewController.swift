@@ -17,7 +17,7 @@ class PhysicalTableViewController: UITableViewController {
     
     @IBOutlet weak var clickhere: UIButton!
     
-    var diseases = [HeroStats]()
+    var disease = [physical]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,16 +27,16 @@ class PhysicalTableViewController: UITableViewController {
         
         underweight.layer.cornerRadius = 10
         overweight.layer.cornerRadius = 10
-        clickhere.layer.cornerRadius = 10
+//        clickhere.layer.cornerRadius = 10
     }
     func downloadJson(completed: @escaping () -> ()){
-        let url = URL(string: "https://firebasestorage.googleapis.com/v0/b/health-arcane.appspot.com/o/MentalHealth.json?alt=media&token=2fc83e2f-fa7a-444f-b360-9daa37d197cc")
+        let url = URL(string: "https://firebasestorage.googleapis.com/v0/b/health-arcane.appspot.com/o/physicalHealth.json?alt=media&token=9ee3c842-a4e0-490d-a0bc-d2afa42538f7")
         
         URLSession.shared.dataTask(with: url!) { data, response, error in
             if error == nil {
                 do {
-                    self.diseases = try JSONDecoder().decode([HeroStats].self, from: data!)
-                
+                    self.disease = try JSONDecoder().decode([physical].self, from: data!)
+               
                     DispatchQueue.main.async {
                         completed()
                     }
@@ -59,14 +59,14 @@ extension PhysicalTableViewController: UICollectionViewDelegate, UICollectionVie
         cell.layer.borderWidth = 3
         cell.layer.borderColor = UIColor.lightGray.cgColor
         cell.layer.cornerRadius = 12
-        cell.name.text = diseases[indexPath.row].name
+        cell.name.text = disease[indexPath.row].name
         return cell
     }
     
     
     
      func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-         return diseases.count
+         return disease.count
      }
      
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -76,7 +76,7 @@ extension PhysicalTableViewController: UICollectionViewDelegate, UICollectionVie
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? PDetailTableViewController {
-            destination.some2 = diseases[(collectiobView.indexPathsForSelectedItems?.last?.row)!]
+            destination.some2 = disease[(collectiobView.indexPathsForSelectedItems?.last?.row)!]
            
         
             

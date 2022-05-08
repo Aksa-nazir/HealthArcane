@@ -16,13 +16,16 @@ class PDetailTableViewController: UITableViewController {
     @IBOutlet weak var symptoms: UILabel!
     
     @IBOutlet weak var types: UILabel!
-    var some2: HeroStats?
+    @IBOutlet weak var exercise: UILabel!
+    var some2: physical?
     override func viewDidLoad() {
         super.viewDidLoad()
         name.text = some2?.name
         descriptionlbl.text = some2?.description
         symptoms.text = some2?.symptoms
-        types.text = some2?.types
+        types.text = some2?.precautionaryMeasures
+        exercise.text = some2?.exercise
+        
        
     }
 }

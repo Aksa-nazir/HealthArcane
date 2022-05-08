@@ -15,8 +15,8 @@ class SplashTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableCell.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        self.tableCell.backgroundColor = UIColor(patternImage: UIImage(named: "frontpic-1")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "frontpic-1")!)
         
         
     }

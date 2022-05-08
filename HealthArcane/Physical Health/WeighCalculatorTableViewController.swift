@@ -55,10 +55,10 @@ class WeighCalculatorTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        self.tableView.backgroundColor = UIColor(patternImage: UIImage(named: "bk")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bk")!)
         
-        self.tableCell.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        self.tableCell.backgroundColor = UIColor(patternImage: UIImage(named: "bk")!)
         
     }
     

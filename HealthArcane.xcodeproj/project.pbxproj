@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE02E2A827DC666B00AFA769 /* AViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02E2A727DC666B00AFA769 /* AViewController.swift */; };
 		CE02E2AC27DC6AF600AFA769 /* details.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02E2AB27DC6AF600AFA769 /* details.swift */; };
 		CE02E2AE27DCA9B400AFA769 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE02E2AD27DCA9B400AFA769 /* TableViewController.swift */; };
 		CE0A507D27BD309700141693 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A507C27BD309700141693 /* Constants.swift */; };
@@ -22,22 +21,33 @@
 		CE178ABC27C4DC360096B494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE178ABB27C4DC360096B494 /* Main.storyboard */; };
 		CE1F02FD27C412F200565F96 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F02FC27C412F200565F96 /* SettingTableViewController.swift */; };
 		CE1F02FF27C4169A00565F96 /* hometabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1F02FE27C4169A00565F96 /* hometabViewController.swift */; };
+		CE220583280DE03300F8E182 /* S4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE220582280DE03300F8E182 /* S4.swift */; };
+		CE24869628283C8F008E97F6 /* S2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24869528283C8F008E97F6 /* S2.swift */; };
+		CE24869828283C9A008E97F6 /* S3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24869728283C9A008E97F6 /* S3.swift */; };
+		CE26D6FC27FAC138006648FF /* OverWeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE26D6FB27FAC138006648FF /* OverWeightTableViewController.swift */; };
 		CE3358AB27E1E91200C8E62A /* PhysicalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3358AA27E1E91200C8E62A /* PhysicalTableViewController.swift */; };
 		CE3358AD27E1ED4E00C8E62A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3358AC27E1ED4E00C8E62A /* CollectionViewCell.swift */; };
 		CE3358AF27E1F69A00C8E62A /* PDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3358AE27E1F69A00C8E62A /* PDetailTableViewController.swift */; };
 		CE3358B227E225C000C8E62A /* WeighCalculatorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3358B127E225C000C8E62A /* WeighCalculatorTableViewController.swift */; };
+		CE3D7D6428059D960033222E /* UnderWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D7D6328059D960033222E /* UnderWeight.swift */; };
+		CE3D7D6628059DA90033222E /* UnderWeightTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D7D6528059DA90033222E /* UnderWeightTableViewController.swift */; };
+		CE3D7D6A2805AF1C0033222E /* StepControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D7D692805AF1C0033222E /* StepControllerViewController.swift */; };
+		CE3D7D6C2805F01C0033222E /* S1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D7D6B2805F01C0033222E /* S1.swift */; };
 		CE49CEB927C4CF920086A8BB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = CE49CEB827C4CF920086A8BB /* SideMenu */; };
+		CE4F3A0527FCA4A5003ACB8E /* Overweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F3A0427FCA4A5003ACB8E /* Overweight.swift */; };
+		CE5BE00E280C924200414655 /* MentalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BE00D280C924200414655 /* MentalTableViewController.swift */; };
+		CE5BE010280C97A900414655 /* mentalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BE00F280C97A900414655 /* mentalTableViewCell.swift */; };
 		CE9F8FE927BA66F400D0669D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F8FE827BA66F400D0669D /* AppDelegate.swift */; };
 		CE9F8FEB27BA66F400D0669D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F8FEA27BA66F400D0669D /* SceneDelegate.swift */; };
 		CE9F8FF227BA66F500D0669D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9F8FF127BA66F500D0669D /* Assets.xcassets */; };
 		CE9F900127BA673E00D0669D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9F900027BA673E00D0669D /* LaunchScreen.storyboard */; };
 		CE9F900327BA674700D0669D /* LoginScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F900227BA674700D0669D /* LoginScreenTableViewController.swift */; };
 		CE9F900527BA674E00D0669D /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F900427BA674E00D0669D /* SignUpTableViewController.swift */; };
+		CEE4545927FF50810099E721 /* detailsPhysical.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4545827FF50810099E721 /* detailsPhysical.swift */; };
 		CEE99DBF27C3D29E001E4297 /* SplashTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE99DBE27C3D29E001E4297 /* SplashTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE02E2A727DC666B00AFA769 /* AViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AViewController.swift; sourceTree = "<group>"; };
 		CE02E2AB27DC6AF600AFA769 /* details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = details.swift; sourceTree = "<group>"; };
 		CE02E2AD27DCA9B400AFA769 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CE0A507C27BD309700141693 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -48,10 +58,21 @@
 		CE178ABB27C4DC360096B494 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CE1F02FC27C412F200565F96 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		CE1F02FE27C4169A00565F96 /* hometabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hometabViewController.swift; sourceTree = "<group>"; };
+		CE220582280DE03300F8E182 /* S4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S4.swift; sourceTree = "<group>"; };
+		CE24869528283C8F008E97F6 /* S2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S2.swift; sourceTree = "<group>"; };
+		CE24869728283C9A008E97F6 /* S3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3.swift; sourceTree = "<group>"; };
+		CE26D6FB27FAC138006648FF /* OverWeightTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverWeightTableViewController.swift; sourceTree = "<group>"; };
 		CE3358AA27E1E91200C8E62A /* PhysicalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalTableViewController.swift; sourceTree = "<group>"; };
 		CE3358AC27E1ED4E00C8E62A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		CE3358AE27E1F69A00C8E62A /* PDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDetailTableViewController.swift; sourceTree = "<group>"; };
 		CE3358B127E225C000C8E62A /* WeighCalculatorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeighCalculatorTableViewController.swift; sourceTree = "<group>"; };
+		CE3D7D6328059D960033222E /* UnderWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderWeight.swift; sourceTree = "<group>"; };
+		CE3D7D6528059DA90033222E /* UnderWeightTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderWeightTableViewController.swift; sourceTree = "<group>"; };
+		CE3D7D692805AF1C0033222E /* StepControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepControllerViewController.swift; sourceTree = "<group>"; };
+		CE3D7D6B2805F01C0033222E /* S1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = S1.swift; path = "Physical Health/S1.swift"; sourceTree = "<group>"; };
+		CE4F3A0427FCA4A5003ACB8E /* Overweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overweight.swift; sourceTree = "<group>"; };
+		CE5BE00D280C924200414655 /* MentalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalTableViewController.swift; sourceTree = "<group>"; };
+		CE5BE00F280C97A900414655 /* mentalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mentalTableViewCell.swift; sourceTree = "<group>"; };
 		CE9F8FE527BA66F400D0669D /* HealthArcane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthArcane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F8FE827BA66F400D0669D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9F8FEA27BA66F400D0669D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +81,7 @@
 		CE9F900027BA673E00D0669D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9F900227BA674700D0669D /* LoginScreenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenTableViewController.swift; sourceTree = "<group>"; };
 		CE9F900427BA674E00D0669D /* SignUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		CEE4545827FF50810099E721 /* detailsPhysical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsPhysical.swift; sourceTree = "<group>"; };
 		CEE99DBE27C3D29E001E4297 /* SplashTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,9 +104,12 @@
 		CE02E2A627DC663D00AFA769 /* Physical Health */ = {
 			isa = PBXGroup;
 			children = (
+				CE26D6F827FAC026006648FF /* Weights */,
 				CE3358AC27E1ED4E00C8E62A /* CollectionViewCell.swift */,
+				CE3D7D692805AF1C0033222E /* StepControllerViewController.swift */,
 				CE3358AA27E1E91200C8E62A /* PhysicalTableViewController.swift */,
 				CE3358AE27E1F69A00C8E62A /* PDetailTableViewController.swift */,
+				CEE4545827FF50810099E721 /* detailsPhysical.swift */,
 				CE3358B127E225C000C8E62A /* WeighCalculatorTableViewController.swift */,
 			);
 			path = "Physical Health";
@@ -102,7 +127,8 @@
 		CE13268C27C6188200B37F5B /* MentalHealth */ = {
 			isa = PBXGroup;
 			children = (
-				CE02E2A727DC666B00AFA769 /* AViewController.swift */,
+				CE5BE00D280C924200414655 /* MentalTableViewController.swift */,
+				CE5BE00F280C97A900414655 /* mentalTableViewCell.swift */,
 				CE02E2AD27DCA9B400AFA769 /* TableViewController.swift */,
 				CE02E2AB27DC6AF600AFA769 /* details.swift */,
 			);
@@ -128,6 +154,17 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
+		CE26D6F827FAC026006648FF /* Weights */ = {
+			isa = PBXGroup;
+			children = (
+				CE26D6FB27FAC138006648FF /* OverWeightTableViewController.swift */,
+				CE3D7D6328059D960033222E /* UnderWeight.swift */,
+				CE3D7D6528059DA90033222E /* UnderWeightTableViewController.swift */,
+				CE4F3A0427FCA4A5003ACB8E /* Overweight.swift */,
+			);
+			path = Weights;
+			sourceTree = "<group>";
+		};
 		CE9F8FDC27BA66F400D0669D = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +184,10 @@
 		CE9F8FE727BA66F400D0669D /* HealthArcane */ = {
 			isa = PBXGroup;
 			children = (
+				CE3D7D6B2805F01C0033222E /* S1.swift */,
+				CE24869528283C8F008E97F6 /* S2.swift */,
+				CE24869728283C9A008E97F6 /* S3.swift */,
+				CE220582280DE03300F8E182 /* S4.swift */,
 				CE0A508E27BD3A6500141693 /* GoogleService-Info.plist */,
 				CE0A507E27BD30D300141693 /* HomeTableViewController.swift */,
 				CE1F02FC27C412F200565F96 /* SettingTableViewController.swift */,
@@ -248,24 +289,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3D7D6C2805F01C0033222E /* S1.swift in Sources */,
 				CE3358AB27E1E91200C8E62A /* PhysicalTableViewController.swift in Sources */,
 				CE3358AF27E1F69A00C8E62A /* PDetailTableViewController.swift in Sources */,
+				CE5BE00E280C924200414655 /* MentalTableViewController.swift in Sources */,
 				CE1F02FD27C412F200565F96 /* SettingTableViewController.swift in Sources */,
 				CE3358AD27E1ED4E00C8E62A /* CollectionViewCell.swift in Sources */,
+				CE5BE010280C97A900414655 /* mentalTableViewCell.swift in Sources */,
 				CE3358B227E225C000C8E62A /* WeighCalculatorTableViewController.swift in Sources */,
 				CE9F900327BA674700D0669D /* LoginScreenTableViewController.swift in Sources */,
 				CE13268827C60C4500B37F5B /* ContactUsTableViewController.swift in Sources */,
 				CE9F900527BA674E00D0669D /* SignUpTableViewController.swift in Sources */,
-				CE02E2A827DC666B00AFA769 /* AViewController.swift in Sources */,
 				CE9F8FE927BA66F400D0669D /* AppDelegate.swift in Sources */,
+				CE24869628283C8F008E97F6 /* S2.swift in Sources */,
+				CEE4545927FF50810099E721 /* detailsPhysical.swift in Sources */,
+				CE220583280DE03300F8E182 /* S4.swift in Sources */,
 				CE02E2AE27DCA9B400AFA769 /* TableViewController.swift in Sources */,
+				CE3D7D6428059D960033222E /* UnderWeight.swift in Sources */,
 				CE02E2AC27DC6AF600AFA769 /* details.swift in Sources */,
 				CE0A507F27BD30D300141693 /* HomeTableViewController.swift in Sources */,
 				CEE99DBF27C3D29E001E4297 /* SplashTableViewController.swift in Sources */,
+				CE26D6FC27FAC138006648FF /* OverWeightTableViewController.swift in Sources */,
 				CE9F8FEB27BA66F400D0669D /* SceneDelegate.swift in Sources */,
 				CE1F02FF27C4169A00565F96 /* hometabViewController.swift in Sources */,
+				CE3D7D6628059DA90033222E /* UnderWeightTableViewController.swift in Sources */,
+				CE24869828283C9A008E97F6 /* S3.swift in Sources */,
 				CE13268A27C611D600B37F5B /* ProfileTableViewController.swift in Sources */,
 				CE0A507D27BD309700141693 /* Constants.swift in Sources */,
+				CE3D7D6A2805AF1C0033222E /* StepControllerViewController.swift in Sources */,
+				CE4F3A0527FCA4A5003ACB8E /* Overweight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
