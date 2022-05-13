@@ -1011,7 +1011,7 @@
         <!--survey-->
         <scene sceneID="RNf-Xa-4CZ">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="zfd-Zn-AXV" customClass="S1" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="zfd-Zn-AXV" customClass="S1" customModule="HealthArcane" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" bouncesZoom="NO" keyboardDismissMode="onDrag" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Bc0-fm-svW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1019,11 +1019,11 @@
                         <sections>
                             <tableViewSection id="AZG-px-0yk">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="901" id="d2Z-ea-7eN">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="901"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="1035" id="d2Z-ea-7eN">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="1035"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d2Z-ea-7eN" id="RF4-yK-aIZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="901"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="1035"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbV-pf-O2H">
@@ -1035,13 +1035,14 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                                     <connections>
+                                                        <action selector="NEXT1:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="Ib1-Uq-fID"/>
                                                         <segue destination="ejP-d1-rWC" kind="show" id="wAj-kc-GmE"/>
                                                     </connections>
                                                 </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VIc-g3-Rbb">
                                                     <rect key="frame" x="30" y="60" width="354" height="684"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you see changes in urination? or blood in urine?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhZ-aI-y3Z">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q1. Do you see changes in urination? or blood in urine?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HhZ-aI-y3Z">
                                                             <rect key="frame" x="0.0" y="0.0" width="354" height="52"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -1051,13 +1052,19 @@
                                                             <rect key="frame" x="0.0" y="62" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q1YES:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="eiF-4N-pQf"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiX-bB-TA7">
                                                             <rect key="frame" x="0.0" y="103" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q1NO:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="YUp-mw-WYR"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you very thirsty and hungry?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ew-Fa-C9b">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q2. Are you very thirsty and hungry?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ew-Fa-C9b">
                                                             <rect key="frame" x="0.0" y="144" width="354" height="26"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -1067,13 +1074,19 @@
                                                             <rect key="frame" x="0.0" y="180" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q2YES:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="vLc-Y0-4V5"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXs-EK-cXJ">
                                                             <rect key="frame" x="0.0" y="221" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q2NO:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="o8y-cS-ejy"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you feel dizziness and fatigue?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akf-NN-f1s">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q3. Do you feel dizziness and fatigue?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akf-NN-f1s">
                                                             <rect key="frame" x="0.0" y="262" width="354" height="26"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -1083,13 +1096,19 @@
                                                             <rect key="frame" x="0.0" y="298" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q3YES:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="0Sv-vv-xqT"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAM-gc-DvM">
                                                             <rect key="frame" x="0.0" y="339" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q3NO:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="udV-yB-i99"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you feel chest pain, chest tightness, chest pressure and chest discomfort (angina)?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjH-mn-Id1">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q4. Do you feel chest pain, chest tightness, chest pressure and chest discomfort (angina)?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjH-mn-Id1">
                                                             <rect key="frame" x="0.0" y="380" width="354" height="78"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -1099,13 +1118,19 @@
                                                             <rect key="frame" x="0.0" y="468" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q4YES:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="tQa-On-5XM"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIw-b3-Scp">
                                                             <rect key="frame" x="0.0" y="509" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q4NO:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="Qc0-r5-Lb0"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you see palms red and yellowing of your skin and eyes?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtk-Ym-Vkh">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q5. Do you see palms red and yellowing of your skin and eyes?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtk-Ym-Vkh">
                                                             <rect key="frame" x="0.0" y="550" width="354" height="52"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -1115,11 +1140,17 @@
                                                             <rect key="frame" x="0.0" y="612" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q5YES:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="WwN-Z2-HdV"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGo-XD-dc5">
                                                             <rect key="frame" x="0.0" y="653" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q5NO:" destination="zfd-Zn-AXV" eventType="touchUpInside" id="Cm6-VD-cOf"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -1147,7 +1178,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87P-VS-Xdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3982.6086956521744" y="778.79464285714278"/>
+            <point key="canvasLocation" x="4232" y="779"/>
         </scene>
         <!--Medical History-->
         <scene sceneID="BKi-vz-Lwu">
@@ -2182,7 +2213,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKY-ye-PpA">
-                                                    <rect key="frame" x="174.5" y="800" width="65" height="40"/>
+                                                    <rect key="frame" x="174.5" y="826" width="65" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="2es-IK-gD1"/>
                                                         <constraint firstAttribute="height" constant="40" id="iT4-Kb-kKk"/>
@@ -2190,13 +2221,14 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                                     <connections>
+                                                        <action selector="next2:" destination="ejP-d1-rWC" eventType="touchUpInside" id="xaK-KR-NXu"/>
                                                         <segue destination="TlG-dQ-0TU" kind="show" id="ZX3-Bq-v28"/>
                                                     </connections>
                                                 </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uPe-w5-DWB">
-                                                    <rect key="frame" x="30" y="60" width="354" height="710"/>
+                                                    <rect key="frame" x="30" y="60" width="354" height="736"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you feel nausea, Indigestion, Heartburn, or Stomach Pain and pain that Spreads to the Arm?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-3K-0Qp">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q6. Do you feel nausea, Indigestion, Heartburn, or Stomach Pain and pain that Spreads to the Arm?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-3K-0Qp">
                                                             <rect key="frame" x="0.0" y="0.0" width="354" height="78"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2206,13 +2238,19 @@
                                                             <rect key="frame" x="0.0" y="88" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q6YES:" destination="ejP-d1-rWC" eventType="touchUpInside" id="JM1-dH-Nnp"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQX-PG-fAv">
                                                             <rect key="frame" x="0.0" y="129" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q6NO:" destination="ejP-d1-rWC" eventType="touchUpInside" id="ve6-Pi-djd"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have numb or tingling hands or feet?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rM3-4c-NST">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q8. Are you losing weight without trying to?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoc-bG-Mdi">
                                                             <rect key="frame" x="0.0" y="170" width="354" height="52"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2222,59 +2260,83 @@
                                                             <rect key="frame" x="0.0" y="232" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q7YES:" destination="ejP-d1-rWC" eventType="touchUpInside" id="ICT-FY-1Qi"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QY-f5-46h">
                                                             <rect key="frame" x="0.0" y="273" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q7NO:" destination="ejP-d1-rWC" eventType="touchUpInside" id="Cps-G5-nTn"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you losing weight without trying to?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoc-bG-Mdi">
-                                                            <rect key="frame" x="0.0" y="314" width="354" height="26"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q7. Do you have numb or tingling hands or feet?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rM3-4c-NST">
+                                                            <rect key="frame" x="0.0" y="314" width="354" height="52"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFT-Kv-Pty">
-                                                            <rect key="frame" x="0.0" y="350" width="354" height="31"/>
+                                                            <rect key="frame" x="0.0" y="376" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q8YES:" destination="ejP-d1-rWC" eventType="touchUpInside" id="ybZ-3W-VGQ"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCG-Sx-3kU">
-                                                            <rect key="frame" x="0.0" y="391" width="354" height="31"/>
+                                                            <rect key="frame" x="0.0" y="417" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q8NO:" destination="ejP-d1-rWC" eventType="touchUpInside" id="1WG-rk-OXn"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you feel the need to urinate more often." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqa-8h-oyK">
-                                                            <rect key="frame" x="0.0" y="432" width="354" height="52"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q9. Do you feel the need to urinate more often." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqa-8h-oyK">
+                                                            <rect key="frame" x="0.0" y="458" width="354" height="52"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaL-Rz-pzx">
-                                                            <rect key="frame" x="0.0" y="494" width="354" height="31"/>
+                                                            <rect key="frame" x="0.0" y="520" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q9YES:" destination="ejP-d1-rWC" eventType="touchUpInside" id="zH5-jm-C6t"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CW3-2w-yr2">
-                                                            <rect key="frame" x="0.0" y="535" width="354" height="31"/>
+                                                            <rect key="frame" x="0.0" y="561" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q9NO:" destination="ejP-d1-rWC" eventType="touchUpInside" id="K7u-uC-p6d"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you feel abdominal pain that radiates to your back?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-hc-xfL">
-                                                            <rect key="frame" x="0.0" y="576" width="354" height="52"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q10. Do you feel abdominal pain that radiates to your back?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqJ-hc-xfL">
+                                                            <rect key="frame" x="0.0" y="602" width="354" height="52"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfP-l0-f8y">
-                                                            <rect key="frame" x="0.0" y="638" width="354" height="31"/>
+                                                            <rect key="frame" x="0.0" y="664" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q10YES:" destination="ejP-d1-rWC" eventType="touchUpInside" id="uF0-g7-8qL"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHn-dn-LXt">
-                                                            <rect key="frame" x="0.0" y="679" width="354" height="31"/>
+                                                            <rect key="frame" x="0.0" y="705" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q10NO:" destination="ejP-d1-rWC" eventType="touchUpInside" id="waz-tc-4Cc"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -2302,7 +2364,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="172-5L-CH1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4719" y="779"/>
+            <point key="canvasLocation" x="5000" y="779"/>
         </scene>
         <!--Survey-->
         <scene sceneID="JVD-Nl-h0R">
@@ -2355,13 +2417,14 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Next"/>
                                                     <connections>
+                                                        <action selector="next3:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="L3S-Xn-sMQ"/>
                                                         <segue destination="hJe-xj-Nee" kind="show" id="DPs-Pm-7eQ"/>
                                                     </connections>
                                                 </button>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mdE-xf-RsW">
                                                     <rect key="frame" x="30" y="60" width="354" height="632"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is your skin very dry?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebf-ch-Ise">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q11. Is your skin very dry?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ebf-ch-Ise">
                                                             <rect key="frame" x="0.0" y="0.0" width="354" height="26"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2371,13 +2434,19 @@
                                                             <rect key="frame" x="0.0" y="36" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q11YES:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="ZkP-zb-X5g"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFm-bi-mcC">
                                                             <rect key="frame" x="0.0" y="77" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q11NO:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="jyE-84-cFz"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Does your skin feel itchy?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryk-ND-2xC">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q12. Does your skin feel itchy?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryk-ND-2xC">
                                                             <rect key="frame" x="0.0" y="118" width="354" height="26"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2387,13 +2456,19 @@
                                                             <rect key="frame" x="0.0" y="154" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q12YES:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="fMP-77-lyd"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLn-1V-YZI">
                                                             <rect key="frame" x="0.0" y="195" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q12NO:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="LaD-NJ-6XU"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is your urine dark colored and stool light colored?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgZ-en-NId">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q13. Is your urine dark colored and stool light colored?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SgZ-en-NId">
                                                             <rect key="frame" x="0.0" y="236" width="354" height="52"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2403,13 +2478,19 @@
                                                             <rect key="frame" x="0.0" y="298" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q13YES:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="i3K-Ic-0af"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZE-jV-EFb">
                                                             <rect key="frame" x="0.0" y="339" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q13NO:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="HlL-pd-xSO"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you see swelling in your legs, ankles, wrist, or even around your eyes?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnL-QO-GhA">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q14. Do you see swelling in your legs, ankles, wrist, or even around your eyes?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnL-QO-GhA">
                                                             <rect key="frame" x="0.0" y="380" width="354" height="52"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2419,13 +2500,19 @@
                                                             <rect key="frame" x="0.0" y="442" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q14YES:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="RKr-Kp-cP5"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57s-iG-aTA">
                                                             <rect key="frame" x="0.0" y="483" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q14NO:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="ObM-0m-LmA"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are your muscles cramping? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAH-Yj-jic">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q15. Are your muscles cramping? " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAH-Yj-jic">
                                                             <rect key="frame" x="0.0" y="524" width="354" height="26"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2435,11 +2522,17 @@
                                                             <rect key="frame" x="0.0" y="560" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q15YES:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="wU7-7y-Yw3"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlX-mB-Sb9">
                                                             <rect key="frame" x="0.0" y="601" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q15NO:" destination="TlG-dQ-0TU" eventType="touchUpInside" id="tP3-SP-sqf"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -2469,7 +2562,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLl-8w-1Nj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5496" y="779"/>
+            <point key="canvasLocation" x="5894" y="779"/>
         </scene>
         <!--Survey-->
         <scene sceneID="gOL-V1-npT">
@@ -2504,7 +2597,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qe8-G4-0sm">
                                                     <rect key="frame" x="30" y="60" width="354" height="710"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have a poor appetite?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmW-Dl-PMc">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q16. Do you have a poor appetite?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmW-Dl-PMc">
                                                             <rect key="frame" x="0.0" y="0.0" width="354" height="26"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2514,13 +2607,19 @@
                                                             <rect key="frame" x="0.0" y="36" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q16YES:" destination="hJe-xj-Nee" eventType="touchUpInside" id="ws0-KS-O1D"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQH-Bb-zjI">
                                                             <rect key="frame" x="0.0" y="77" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q16NO:" destination="hJe-xj-Nee" eventType="touchUpInside" id="Sny-4p-VUv"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you feel palpitations (irregular heart beats, or a &quot;flip-flop&quot; feeling in your chest)?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhM-oW-4a5">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q17. Do you feel palpitations (irregular heart beats, or a &quot;flip-flop&quot; feeling in your chest)?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VhM-oW-4a5">
                                                             <rect key="frame" x="0.0" y="118" width="354" height="78"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2530,13 +2629,19 @@
                                                             <rect key="frame" x="0.0" y="206" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q17YES:" destination="hJe-xj-Nee" eventType="touchUpInside" id="Fxd-I9-iJY"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znr-jx-wy6">
                                                             <rect key="frame" x="0.0" y="247" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q17NO:" destination="hJe-xj-Nee" eventType="touchUpInside" id="Hxh-F8-bQ6"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you feel Abdominal pain or a feeling of fullness in the upper right side of the abdomen (belly)?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeI-xV-lV2">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q18. Do you feel Abdominal pain or a feeling of fullness in the upper right side of the abdomen (belly)?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeI-xV-lV2">
                                                             <rect key="frame" x="0.0" y="288" width="354" height="78"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2546,13 +2651,19 @@
                                                             <rect key="frame" x="0.0" y="376" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q18YES:" destination="hJe-xj-Nee" eventType="touchUpInside" id="4ON-gY-l98"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qN-qw-Lnq">
                                                             <rect key="frame" x="0.0" y="417" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q18NO:" destination="hJe-xj-Nee" eventType="touchUpInside" id="cBF-TP-s1S"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you feel choking sensation or pain in arm, jaw, back, leg?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buw-Zk-cvm">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q19. Do you feel choking sensation or pain in arm, jaw, back, leg?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buw-Zk-cvm">
                                                             <rect key="frame" x="0.0" y="458" width="354" height="52"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2562,13 +2673,19 @@
                                                             <rect key="frame" x="0.0" y="520" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q19YES:" destination="hJe-xj-Nee" eventType="touchUpInside" id="crK-hf-eiF"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohL-rs-oov">
                                                             <rect key="frame" x="0.0" y="561" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q19NO:" destination="hJe-xj-Nee" eventType="touchUpInside" id="BUX-b5-6wX"/>
+                                                            </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you have blurry vision?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cob-Vn-Odr">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q20. Do you have blurry vision?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cob-Vn-Odr">
                                                             <rect key="frame" x="0.0" y="602" width="354" height="26"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
                                                             <nil key="textColor"/>
@@ -2578,11 +2695,17 @@
                                                             <rect key="frame" x="0.0" y="638" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="Yes"/>
+                                                            <connections>
+                                                                <action selector="Q20YES:" destination="hJe-xj-Nee" eventType="touchUpInside" id="bQC-ko-d1G"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBW-c4-d02">
                                                             <rect key="frame" x="0.0" y="679" width="354" height="31"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" title="No"/>
+                                                            <connections>
+                                                                <action selector="Q20NO:" destination="hJe-xj-Nee" eventType="touchUpInside" id="4Dk-lL-dDh"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -2636,7 +2759,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tck-yJ-Tkg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6241" y="779"/>
+            <point key="canvasLocation" x="6539" y="779"/>
         </scene>
     </scenes>
     <resources>
