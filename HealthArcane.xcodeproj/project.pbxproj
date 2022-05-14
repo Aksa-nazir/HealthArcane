@@ -37,6 +37,11 @@
 		CE4F3A0527FCA4A5003ACB8E /* Overweight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4F3A0427FCA4A5003ACB8E /* Overweight.swift */; };
 		CE5BE00E280C924200414655 /* MentalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BE00D280C924200414655 /* MentalTableViewController.swift */; };
 		CE5BE010280C97A900414655 /* mentalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5BE00F280C97A900414655 /* mentalTableViewCell.swift */; };
+		CE63FC96282FB3D200C2B7AE /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63FC92282FB3D200C2B7AE /* NoteTableView.swift */; };
+		CE63FC97282FB3D200C2B7AE /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63FC93282FB3D200C2B7AE /* NoteDetailVC.swift */; };
+		CE63FC98282FB3D200C2B7AE /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63FC94282FB3D200C2B7AE /* NoteCell.swift */; };
+		CE63FC99282FB3D200C2B7AE /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63FC95282FB3D200C2B7AE /* Note.swift */; };
+		CE63FC9D282FB5E900C2B7AE /* NoteAppCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE63FC9B282FB5E900C2B7AE /* NoteAppCoreData.xcdatamodeld */; };
 		CE9F8FE927BA66F400D0669D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F8FE827BA66F400D0669D /* AppDelegate.swift */; };
 		CE9F8FEB27BA66F400D0669D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F8FEA27BA66F400D0669D /* SceneDelegate.swift */; };
 		CE9F8FF227BA66F500D0669D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9F8FF127BA66F500D0669D /* Assets.xcassets */; };
@@ -73,6 +78,11 @@
 		CE4F3A0427FCA4A5003ACB8E /* Overweight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overweight.swift; sourceTree = "<group>"; };
 		CE5BE00D280C924200414655 /* MentalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalTableViewController.swift; sourceTree = "<group>"; };
 		CE5BE00F280C97A900414655 /* mentalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mentalTableViewCell.swift; sourceTree = "<group>"; };
+		CE63FC92282FB3D200C2B7AE /* NoteTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
+		CE63FC93282FB3D200C2B7AE /* NoteDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		CE63FC94282FB3D200C2B7AE /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		CE63FC95282FB3D200C2B7AE /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		CE63FC9C282FB5E900C2B7AE /* NoteAppCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NoteAppCoreData.xcdatamodel; sourceTree = "<group>"; };
 		CE9F8FE527BA66F400D0669D /* HealthArcane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthArcane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9F8FE827BA66F400D0669D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9F8FEA27BA66F400D0669D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +175,18 @@
 			path = Weights;
 			sourceTree = "<group>";
 		};
+		CE63FC9A282FB3DC00C2B7AE /* med */ = {
+			isa = PBXGroup;
+			children = (
+				CE63FC95282FB3D200C2B7AE /* Note.swift */,
+				CE63FC92282FB3D200C2B7AE /* NoteTableView.swift */,
+				CE63FC93282FB3D200C2B7AE /* NoteDetailVC.swift */,
+				CE63FC94282FB3D200C2B7AE /* NoteCell.swift */,
+				CE63FC9B282FB5E900C2B7AE /* NoteAppCoreData.xcdatamodeld */,
+			);
+			path = med;
+			sourceTree = "<group>";
+		};
 		CE9F8FDC27BA66F400D0669D = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +220,7 @@
 				CE9F900027BA673E00D0669D /* LaunchScreen.storyboard */,
 				CE9F8FEA27BA66F400D0669D /* SceneDelegate.swift */,
 				CE9F8FE827BA66F400D0669D /* AppDelegate.swift */,
+				CE63FC9A282FB3DC00C2B7AE /* med */,
 				CE178ABF27C4F47A0096B494 /* Files */,
 				CE178ABB27C4DC360096B494 /* Main.storyboard */,
 				CE9F8FF127BA66F500D0669D /* Assets.xcassets */,
@@ -302,6 +325,7 @@
 				CE9F900527BA674E00D0669D /* SignUpTableViewController.swift in Sources */,
 				CE9F8FE927BA66F400D0669D /* AppDelegate.swift in Sources */,
 				CE24869628283C8F008E97F6 /* S2.swift in Sources */,
+				CE63FC96282FB3D200C2B7AE /* NoteTableView.swift in Sources */,
 				CEE4545927FF50810099E721 /* detailsPhysical.swift in Sources */,
 				CE220583280DE03300F8E182 /* S4.swift in Sources */,
 				CE02E2AE27DCA9B400AFA769 /* TableViewController.swift in Sources */,
@@ -312,12 +336,16 @@
 				CE26D6FC27FAC138006648FF /* OverWeightTableViewController.swift in Sources */,
 				CE9F8FEB27BA66F400D0669D /* SceneDelegate.swift in Sources */,
 				CE1F02FF27C4169A00565F96 /* hometabViewController.swift in Sources */,
+				CE63FC97282FB3D200C2B7AE /* NoteDetailVC.swift in Sources */,
 				CE3D7D6628059DA90033222E /* UnderWeightTableViewController.swift in Sources */,
 				CE24869828283C9A008E97F6 /* S3.swift in Sources */,
 				CE13268A27C611D600B37F5B /* ProfileTableViewController.swift in Sources */,
+				CE63FC9D282FB5E900C2B7AE /* NoteAppCoreData.xcdatamodeld in Sources */,
 				CE0A507D27BD309700141693 /* Constants.swift in Sources */,
+				CE63FC99282FB3D200C2B7AE /* Note.swift in Sources */,
 				CE3D7D6A2805AF1C0033222E /* StepControllerViewController.swift in Sources */,
 				CE4F3A0527FCA4A5003ACB8E /* Overweight.swift in Sources */,
+				CE63FC98282FB3D200C2B7AE /* NoteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -430,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -565,6 +593,19 @@
 			productName = SideMenu;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CE63FC9B282FB5E900C2B7AE /* NoteAppCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE63FC9C282FB5E900C2B7AE /* NoteAppCoreData.xcdatamodel */,
+			);
+			currentVersion = CE63FC9C282FB5E900C2B7AE /* NoteAppCoreData.xcdatamodel */;
+			path = NoteAppCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE9F8FDD27BA66F400D0669D /* Project object */;
 }

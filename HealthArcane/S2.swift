@@ -66,5 +66,13 @@ class S2: UITableViewController {
         
         sumKidney = arrayKidney.reduce(0, +)
         print(sumKidney)
+        sumHeart = arrayHeart.reduce(0, +)
+        print(sumHeart)
+        sumDiabetes = arrayDiabetes.reduce(0, +)
+        print(sumDiabetes)
+        sumFattyliver = arrayfattyLiver.reduce(0, +)
+        print(sumFattyliver)
+        sumPancreaticcancer = arrayPancreaticCancer.reduce(0, +)
+        print(sumPancreaticcancer)
 }
 }
